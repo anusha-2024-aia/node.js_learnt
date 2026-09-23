@@ -4,9 +4,12 @@
   "description": "node.js crash course code",
   "license": "MIT",
   "author": "Anusha Anbazhagan",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --env-file=.env server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
